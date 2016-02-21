@@ -84,7 +84,7 @@ public class Robot extends IterativeRobot {
 * SAMPLE CODE FROM TEAM 5505
 */
 
-package org.usfirst.frc.team5505.robot;
+package org.usfirst.frc.team3603.robot;
 
 
 import edu.wpi.first.wpilibj.SampleRobot;
