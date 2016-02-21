@@ -1,4 +1,4 @@
-
+ 
 package org.usfirst.frc.team3603.robot;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
@@ -84,95 +84,95 @@ public class Robot extends IterativeRobot {
 * SAMPLE CODE FROM TEAM 5505
 */
 
-package org.usfirst.frc.team3603.robot;
+//	package org.usfirst.frc.team3603.robot;
 
 
-import edu.wpi.first.wpilibj.SampleRobot;
-import edu.wpi.first.wpilibj.Solenoid;
-import edu.wpi.first.wpilibj.TalonSRX;
-import edu.wpi.first.wpilibj.RobotDrive;
-import edu.wpi.first.wpilibj.DoubleSolenoid;
-import edu.wpi.first.wpilibj.Joystick;
-import edu.wpi.first.wpilibj.Timer;
+//	import edu.wpi.first.wpilibj.SampleRobot;
+//	import edu.wpi.first.wpilibj.Solenoid;
+//	import edu.wpi.first.wpilibj.TalonSRX;
+//	import edu.wpi.first.wpilibj.RobotDrive;
+//	import edu.wpi.first.wpilibj.DoubleSolenoid;
+//	import edu.wpi.first.wpilibj.Joystick;
+//	import edu.wpi.first.wpilibj.Timer;
 
-public class Robot extends SampleRobot {
-    RobotDrive Rando;
-    Joystick XboxController;
-    DoubleSolenoid DoubleSolenoid;
-    Solenoid Solenoid;
-    TalonSRX Motor1;
-    TalonSRX Motor2;
-    TalonSRX Motor3;
-    TalonSRX Motor4;
-    TalonSRX Motor5;
+//	public class Robot extends SampleRobot {
+//	RobotDrive Rando;
+//    Joystick XboxController;
+//    DoubleSolenoid DoubleSolenoid;
+//    Solenoid Solenoid;
+//    TalonSRX Motor1;
+//    TalonSRX Motor2;
+//    TalonSRX Motor3;
+//    TalonSRX Motor4;
+//    TalonSRX Motor5;
 
-    public Robot() {
-        Rando = new RobotDrive (0, 1);
-        Rando.setExpiration(0.1);
-        XboxController = new Joystick (0);
-        DoubleSolenoid = new DoubleSolenoid (1,2);
-        Solenoid = new Solenoid (1);
-        Motor1 = new TalonSRX (2);
-        Motor2 = new TalonSRX (3);
-        Motor3 = new TalonSRX (4);
-        Motor4 = new TalonSRX (5);
-        Motor5 = new TalonSRX (6);
-    }
+//   public Robot() {
+//		Rando = new RobotDrive (0, 1);
+//  	Rando.setExpiration(0.1);
+//      XboxController = new Joystick (0);
+//        DoubleSolenoid = new DoubleSolenoid (1,2);
+//        Solenoid = new Solenoid (1);
+//        Motor1 = new TalonSRX (2);
+//        Motor2 = new TalonSRX (3);
+//        Motor3 = new TalonSRX (4);
+//        Motor4 = new TalonSRX (5);
+//       Motor5 = new TalonSRX (6);
+//    }
     
-    public void robotInit() {
+//    public void robotInit() {
 
-    }
+//    }
     
-    public void autonomous() {
+//    public void autonomous() {
     
         
-    }
+//    }
 
-    public void operatorControl() {
-        Rando.setSafetyEnabled(true);
-        while (isOperatorControl() && isEnabled()) {
-            Rando.tankDrive(XboxController.getRawAxis(1), XboxController.getRawAxis(5));
+//    public void operatorControl() {
+//        Rando.setSafetyEnabled(true);
+//        while (isOperatorControl() && isEnabled()) {
+//            Rando.tankDrive(XboxController.getRawAxis(1), XboxController.getRawAxis(5));
             
-            if(XboxController.getRawButton(/*Insert Button #*/)) {
-            	Motor1.set(1);
-            }
-            if(XboxController.getRawButton(/*Insert Button #*/)) {
-            	Motor2.set(1);
-            }
-            if(XboxController.getRawButton(/*Insert Button #*/)) {
-            	Motor3.set(1);
-            }
-            if(XboxController.getRawButton(/*Insert Button #*/)) {
-            	Motor4.set(1);
-            }
-            if(XboxController.getRawButton(/*Insert Button #*/)) {
-            	Motor5.set(1);
-            }
+//            if(XboxController.getRawButton(/*Insert Button #*/)) {
+//            	Motor1.set(1);
+//            }
+//            if(XboxController.getRawButton(/*Insert Button #*/)) {
+//            	Motor2.set(1);
+//            }
+//           if(XboxController.getRawButton(/*Insert Button #*/)) {
+//            	Motor3.set(1);
+//            }
+//            if(XboxController.getRawButton(/*Insert Button #*/)) {
+//            	Motor4.set(1);
+//           }
+//            if(XboxController.getRawButton(/*Insert Button #*/)) {
+//            	Motor5.set(1);
+//            }
             
             
-            if(XboxController.getRawButton(/*Insert BUtton #*/)) {
-            	Solenoid.set(true);
-            }
-            else if(XboxController.getRawButton(/*Insert Button #*/)) {
-            	Solenoid.set(false);
-            }
+//            if(XboxController.getRawButton(/*Insert BUtton #*/)) {
+//            	Solenoid.set(true);
+//            }
+//            else if(XboxController.getRawButton(/*Insert Button #*/)) {
+//           	Solenoid.set(false);
+//            }
             
-            if(XboxController.getRawButton(/*Insert BUtton #*/)) {
-            	DoubleSolenoid.set(DoubleSolenoid.Value.kOff);
-            }
-            else if(XboxController.getRawButton(/*Insert Button #*/)) {
-            	DoubleSolenoid.set(DoubleSolenoid.Value.kOn);
-            }
-            // If you want a motor to be controlled  by a trigger, you can do:
-            /* Motor2.set(XboxController.getRawAxis(Insert Axis #); */
+//            if(XboxController.getRawButton(/*Insert BUtton #*/)) {
+//            	DoubleSolenoid.set(DoubleSolenoid.Value.kOff);
+//            }
+//            else if(XboxController.getRawButton(/*Insert Button #*/)) {
+//           	DoubleSolenoid.set(DoubleSolenoid.Value.kOn);
+//            }
+//            // If you want a motor to be controlled  by a trigger, you can do:
+//           /* Motor2.set(XboxController.getRawAxis(Insert Axis #); */
         	
-            Timer.delay(0.005);		// wait for a motor update time
-        }
-    }
+//            Timer.delay(0.005);		// wait for a motor update time
+//        }
+//    }
 
     /**
      * Runs during test mode
      */
-    public void test() {
-    }
-}
+//    public void test() {
+//    }
+//}
