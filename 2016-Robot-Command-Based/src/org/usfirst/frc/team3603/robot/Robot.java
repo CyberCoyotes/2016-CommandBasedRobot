@@ -1,4 +1,9 @@
- // Command Based Code
+/****************************************
+ * 
+ *	Command Based JAVA for 2016 FRC Season
+ *	@author CyberCoyotes
+ *
+ ****************************************/
 
 package org.usfirst.frc.team3603.robot;
 
